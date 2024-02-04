@@ -83,7 +83,11 @@ def test_my_func():
 
 3. Validate the mocked decorator was called with expected arguments.
 
-    Template: `<mock_name>.<decorated function name>.assert_called_once_with(<decorator args>)`
+    Template: 
+    
+    ```python3
+    <mock_name>.<decorated function name>.assert_called_once_with(<decorator args>)
+    ```
 
 ## Contribute
 
