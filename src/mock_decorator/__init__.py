@@ -4,8 +4,14 @@ import functools
 from typing import TYPE_CHECKING, Any
 from unittest import mock
 
+
+
 if TYPE_CHECKING:
-    from collections.abc import Callable
+    import sys
+    if sys.version_info < (3, 14):
+        from typing import Callable
+    else:
+        from collections.abc import Callable
 
 
 class MockDecorator:
