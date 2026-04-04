@@ -1,8 +1,11 @@
 """MockDecorator is a simple decorator for mocking functions in tests."""
 
 import functools
-from typing import Any, Callable
+from typing import TYPE_CHECKING, Any
 from unittest import mock
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
 
 class MockDecorator:
