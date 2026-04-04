@@ -1,8 +1,14 @@
 """MockDecorator is a simple decorator for mocking functions in tests."""
 
 import functools
-from typing import Any, Callable
+import sys
+from typing import Any
 from unittest import mock
+
+if sys.version_info < (3, 14):
+    from typing import Callable  # noqa: UP035
+else:
+    from collections.abc import Callable
 
 
 class MockDecorator:

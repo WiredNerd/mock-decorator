@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "mock-decorator"
 description = "Create a mock object for a Decorator"
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE" }
 keywords = ["test", "mock", "decorator"]
 authors = [{ name = "WiredNerd", email = "pbuschmail-github@yahoo.com" }]
 maintainers = [{ name = "WiredNerd", email = "pbuschmail-github@yahoo.com" }]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -53,16 +53,16 @@ exclude_also = ["import .*", "from .* import .*", "if TYPE_CHECKING:"]
 
 [tool.black]
 line-length = 120
-target-version = ['py38', 'py39', 'py310', 'py311']
+target-version = ['py310', 'py311', 'py312', 'py313', 'py314']
 color = true
 
 [tool.isort]
 profile = 'black'
 line_length = 120
-py_version = 38
+py_version = 310
 
 [tool.ruff]
-target-version = "py38"
+target-version = "py310"
 output-format = "full"
 lint.select = ["ALL"]
 lint.ignore = [
@@ -76,8 +76,6 @@ lint.ignore = [
     "TD002",   # Missing author in TODO
     "TD003",   # Missing issue link on the line following this TODO
     "TRY003",  # Avoid specifying long messages outside the exception class
-    "ANN101",  # Missing type annotation for self in method
-    "ANN102",  # Missing type annotation for cls in method
     "ANN002",  # Missing type annotation for *args
     "ANN003",  # Missing type annotation for **kwargs
     "ISC001",  # single-line-implicit-string-concatenation

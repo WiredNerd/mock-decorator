@@ -1,5 +1,5 @@
 [![Homepage](https://img.shields.io/badge/Homepage-github-white?logo=github)](https://github.com/WiredNerd/mock-decorator)
-[![python 3.9 - 3.12](https://img.shields.io/badge/python-3.8%20to%203.12-orange?logo=python&logoColor=green)](https://pypi.org/project/mock-decorator)
+[![python 3.10 - 3.14](https://img.shields.io/badge/python-3.10%20to%203.14-orange?logo=python&logoColor=green)](https://pypi.org/project/mock-decorator)
 [![PyPI - Version](https://img.shields.io/pypi/v/mock-decorator?logo=pypi&logoColor=white)](https://pypi.org/project/mock-decorator)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/mock-decorator)](https://pypistats.org/packages/mock-decorator)
 [![PyPI - License](https://img.shields.io/pypi/l/mock-decorator)](https://github.com/WiredNerd/mock-decorator/blob/main/LICENSE)
