@@ -110,7 +110,7 @@ jobs:
         uses: chartboost/ruff-action@v1
         with:
           src: src
-          args: check --show-source
+          args: check --output-format=full
       - name: Ruff src diff
         uses: chartboost/ruff-action@v1
         if: ${{ always() }}
@@ -122,7 +122,7 @@ jobs:
         if: ${{ always() }}
         with:
           src: tests
-          args: check --show-source
+          args: check --output-format=full
       - name: Ruff tests diff
         uses: chartboost/ruff-action@v1
         if: ${{ always() }}
